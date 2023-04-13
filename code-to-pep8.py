@@ -8,3 +8,8 @@ def long_function_name(
 
 foo = long_function_name(1, 2,
     3, 4)
+
+
+foo = long_function_name(1,
+                         321321,
+    3, 4)
