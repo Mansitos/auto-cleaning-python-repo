@@ -9,7 +9,7 @@ def long_function_name(var_one, var_two, var_three, var_four):
 
 foo = long_function_name(1,
                          
-                         2, 3, 4)
+                         2, 3, 45)
 
 foo = long_function_name(1,
                          
