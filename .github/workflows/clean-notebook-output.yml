@@ -2,7 +2,7 @@ name: Automatic notebook cleaning
 on:
   push:
     paths:
-    - '**.py'
+    - '**.ipynb'
 jobs:
   clean-ipynb-output:
     runs-on: ubuntu-latest
