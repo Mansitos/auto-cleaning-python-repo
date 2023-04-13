@@ -20,7 +20,9 @@ jobs:
         run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
       - name: Pushing formatted files changes
         if: steps.git-check.outputs.modified == 'true'
-        run: |
+        run: | # identity...
+          git config --global user.name 'autoyapf-formatter-action'
+          git config --global user.email 'mansitos97@gmail.com' 
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git commit -am "🍃 Automated autoyapf fixes 🍃"
+          git commit -am "🍃 Automated Autoyapf PEP8 Formatting 🍃"
           git push
