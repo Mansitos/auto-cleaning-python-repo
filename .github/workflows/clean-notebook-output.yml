@@ -14,4 +14,4 @@ jobs:
         run: |
           pip install nbconvert
       - name: Running nbbconvert
-        run: nbconvert --ClearOutputPreprocessor.enabled=True --inplace notebook.ipynb
+        run: jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace notebook.ipynb
