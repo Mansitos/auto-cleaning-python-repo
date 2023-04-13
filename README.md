@@ -1,4 +1,5 @@
 # Auto Cleaning and Formatting python repo
+[![Automatic Code Cleaning & Formatter](https://github.com/Mansitos/auto-cleaning-python-repo/actions/workflows/code-cleaner.yml/badge.svg)](https://github.com/Mansitos/auto-cleaning-python-repo/actions/workflows/code-cleaner.yml)
 
 This repo contains multiple CI/CD GitHub Action-based workflow tests to keep python repositories clean and high quality
 
