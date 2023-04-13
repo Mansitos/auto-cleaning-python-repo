@@ -1,0 +1,18 @@
+name: Automatic notebook cleaning
+on:
+  push:
+    paths:
+    - '**.py'
+jobs:
+  clean-ipynb-output:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Installing nb-clean
+        run: |
+          pip install nb-clean
+      - name: Installing nb-clean
+        run: |
+          echo test
