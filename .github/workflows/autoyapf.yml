@@ -21,8 +21,6 @@ jobs:
       - name: Pushing formatted files changes
         if: steps.git-check.outputs.modified == 'true'
         run: |
-          git config --global user.name 'autoyapf-formatter-action'
-          git config --global user.email 'mansitos97@gmail.com' 
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git commit -am "🍃 Automated autoyapf fixes 🍃"
           git push
